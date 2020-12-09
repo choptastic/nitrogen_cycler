@@ -8,7 +8,7 @@
 	width: 100%;
 	height: 100%;
 	transform-style: preserve-3d;
-	transition: all 0.3s linear;
+	transition: all 0.2s linear;
 }
 
 .cycler_flipped {
@@ -22,10 +22,15 @@
 	backface-visibility: hidden;
 }
 
-.cycler_face.cycler_back {
+.cycler_back {
 	display: block;
+	backface-visibility: hidden;
 	transform: rotateY(180deg);
 	box-sizing: border-box;
 	text-align: center;
+}
+
+.cycler_back img{
+	transform: rotateY(180);
 }
 

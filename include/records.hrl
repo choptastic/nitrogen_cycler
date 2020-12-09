@@ -1,0 +1,1 @@
+-record(cycler, {?ELEMENT_BASE(element_cycler), images=[], transition=flip, transition_time=300, linger_time=2000}).

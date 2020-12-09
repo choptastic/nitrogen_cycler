@@ -1,0 +1,31 @@
+.cycler_container {
+	position: relative;
+	z-index: 1;
+	perspective: 1000;
+}
+
+.cycler_card {
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 0.3s linear;
+}
+
+.cycler_flipped {
+	transform: rotateY(180deg);
+}
+
+.cycler_face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.cycler_face.cycler_back {
+	display: block;
+	transform: rotateY(180deg);
+	box-sizing: border-box;
+	text-align: center;
+}
+

@@ -1,0 +1,12 @@
+%% vim ts=2 sw=2 et ft=erlang
+{application, nitrogen_cycler,
+ [
+  {description, "An image/content cycler for Nitrogen (that uses jquery)"},
+  {vsn, "0.0.1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {env, []}
+ ]}.
